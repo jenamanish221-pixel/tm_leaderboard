@@ -1,6 +1,8 @@
-const supabaseUrl = 'https://ocpjersnydfktqpmgnvi.supabase.co';
-const supabaseKey = 'sb_publishable_8xzs5pQ7iS5T8u8f_fshVw_jq7XEbDz';
-const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+const supabaseUrl = 'https://ocpjersnydfktqpmgnvi.supabase.co'; 
+const supabaseKey = 'sb_publishable_8xzs5pQ7iS5T8u8f_fshVw_jq7XEbDz'; 
+
+// Use this exact line (no 'const' before the second supabase)
+supabaseClient = supabase.createClient(supabaseUrl, supabaseKey);
 
 // 1. Function to send data to the database
 async function submitTime() {
