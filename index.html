@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trackmania Duo Leaderboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🏎️ Trackmania Rivals</h1>
+    
+    <div class="form-container">
+        <input type="text" id="playerName" placeholder="Your Name">
+        <input type="text" id="mapName" placeholder="Map Name">
+        <input type="number" id="finishTime" step="0.001" placeholder="Time (e.g. 45.320)">
+        <button onclick="submitTime()">Post Time</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Player</th>
+                <th>Map</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody id="leaderboardBody">
+            </tbody>
+    </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #111111; /* Deep Dark Background */
+    color: #eeeeee;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 4px solid #f3ae00; /* TM Orange */
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+.form-container {
+    background: #222222;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    margin-bottom: 40px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background: #333;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+}
+
+input:focus {
+    border-color: #f3ae00;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #f3ae00;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.1s, background-color 0.2s;
+}
+
+button:hover {
+    background-color: #ffc400;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    background: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden; /* Rounds the table corners */
+}
+
+thead {
+    background-color: #333;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+tr:hover {
+    background-color: #252525;
+}
+
+/* Podium Colors */
+tbody tr:nth-child(1) { color: #ffd700; font-weight: bold; } /* Gold */
+tbody tr:nth-child(2) { color: #c0c0c0; } /* Silver */
+tbody tr:nth-child(3) { color: #cd7f32; } /* Bronze */
+
+/* Rank Column Styling */
+td:first-child {
+    font-weight: bold;
+    width: 50px;
+}
